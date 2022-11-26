@@ -6,6 +6,10 @@ Entity management plugin for Minecraft servers running Bukkit. This is currently
 
 Kotlin is a modern but already mature programming language aimed to make developers happier. It's concise, safe, interoperable with Java and other languages, and provides many ways to reuse code between multiple platforms for productive programming.
 
+https://kotlinlang.org/docs/getting-started.html
+
+www.spigotmc.org%2Fwiki%2Fhow-to-use-kotlin-in-your-plugins%2F&usg=AOvVaw3uk76WRyHfTTsz7x5NLvNN
+
 # License
 
 This plugin is licensed under the MIT License. For more information, please refer to LICENSE.
