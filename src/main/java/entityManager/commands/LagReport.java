@@ -6,6 +6,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -17,7 +19,8 @@ public class LagReport extends SubCommand {
     }
 
     @Override
-    public void execute(CommandSender sender, String[] args) {
+    public void execute(@Nullable CommandSender sender, @NotNull String[] args) {
+
 		if (!(sender instanceof Player player)) {
 			sender.sendMessage(Chat.red + "Sorry, that only works as a player.");
 			return;

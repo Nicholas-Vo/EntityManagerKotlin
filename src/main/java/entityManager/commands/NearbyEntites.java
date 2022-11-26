@@ -14,6 +14,8 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class NearbyEntites extends SubCommand {
 	private int max = 200;
@@ -23,7 +25,7 @@ public class NearbyEntites extends SubCommand {
 	}
 
 	@Override
-	public void execute(CommandSender sender, String[] args) {
+	public void execute(@Nullable CommandSender sender, @NotNull String[] args) {
 		if (!(sender instanceof Player player)) { return; }
 
 		int radius = 10;

@@ -7,6 +7,8 @@ import entityManager.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 import java.util.UUID;
@@ -20,7 +22,7 @@ public class WandToggleCommand extends SubCommand implements Listener {
     }
 
     @Override
-    public void execute(CommandSender sender, String[] args) {
+    public void execute(@Nullable CommandSender sender, @NotNull String[] args) {
         if (!(sender instanceof Player player)) {
             sender.sendMessage(Chat.red + "That's a player only command.");
             return;
